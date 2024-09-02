@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cờ Việt Nam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+      .text {
+        position: absolute;
+        top: 0;
+        color: #e90003;
+        font-size: 7rem;
+      }
+      .flag {
+        width: 300px;
+        height: 200px;
+        background-color: #e90003;
+        position: relative;
+      }
+      .flag1,
+      .flag2 {
+        position: relative;
+      }
+      .flag1::before {
+        content: "";
+        position: absolute;
+        height: 500px;
+        width: 10px;
+        left: -10px;
+        top: 0;
+        background-color: #d0ccc2;
+      }
+      .flag2::after {
+        content: "";
+        position: absolute;
+        height: 500px;
+        width: 10px;
+        right: -10px;
+        top: 0;
+        background-color: #d0ccc2;
+      }
+      .star {
+        position: absolute;
+        top: 40px;
+        left: 120px;
+      }
+      .star-point {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 23px solid transparent;
+        border-right: 23px solid transparent;
+        border-bottom: 60px solid #fffe03;
+        transform-origin: 50% 100%;
+      }
+      .star-point:nth-child(1) {
+        transform: rotate(0deg);
+      }
+      .star-point:nth-child(2) {
+        transform: rotate(72deg);
+      }
+      .star-point:nth-child(3) {
+        transform: rotate(144deg);
+      }
+      .star-point:nth-child(4) {
+        transform: rotate(216deg);
+      }
+      .star-point:nth-child(5) {
+        transform: rotate(288deg);
+      }
+      .flag1 {
+        transform: rotate(30deg);
+        left: 400px;
+      }
+      .flag2 {
+        transform: rotate(-30deg);
+        left: -400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="text nerko-one-regular">2-9</h2>
+    <div class="flag flag1">
+      <div class="star">
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+      </div>
+    </div>
+    <div class="flag flag2">
+      <div class="star">
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+      </div>
+    </div>
+  </body>
+</html>
